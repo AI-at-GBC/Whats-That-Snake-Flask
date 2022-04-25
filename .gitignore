@@ -3,3 +3,5 @@ __pycache__
 dtest.py
 ptest.py
 saved_model/
+static/uploads/
+static/model_output/
