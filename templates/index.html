@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>What's This Snake?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+    .header {text-align: center; padding: 30px 30px 30x 30px; font-size: 40px;}
+    .upload {text-align: center; padding: 20px 20px 20x 20px; font-size: 30px;}
+    .download {text-align: center; padding: 15px 15px 15x 15px; font-size: 30px;}
+  </style>
+  <body>
+    <div class="header">
+        <h1 align="center">What's This Snake?</h1>
+    </div>
+
+    <div class="upload">
+        <p><strong>Upload file...</strong></p>
+        <div id="controls">
+        <form class="p-3 text-center" action="/upload", method="post" enctype="multipart/form-data">
+            <input class="form-control" type="file" name="picfile" style="font-size:16px"><br>
+            <p><strong>Detect Snake</strong></p>
+            <input class="btn btn-primary mt-3" type="submit" value="Detect" style="height:40px; width:120px; font-size:24px">
+        </form>
+        </div>
+    </div>
+
+  </body>
+</html>
+
