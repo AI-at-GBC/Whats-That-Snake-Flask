@@ -9,16 +9,13 @@ from flask import Flask, render_template, flash, request, redirect, url_for
 from werkzeug.utils import secure_filename
 import sys
 
-import helper_process_and_predict as dhelper
-
 app = Flask(__name__)
 
 detected_path = 'static/model_output/'
 upload_path = 'static/uploads/'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 
-os.system('cd /root/models/research/object_detection/utils')
-os.system("sed -i \"s/font = ImageFont.truetype('arial.ttf', 24)/font = ImageFont.truetype('arial.ttf', 50)/\" visualization_utils.py")
+os.system("sed -i \"s/font = ImageFont.truetype('arial.ttf', 24)/font = ImageFont.truetype('arial.ttf', 50)/\" /root/models/research/object_detection/utils/visualization_utils.py")
 
 #app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
